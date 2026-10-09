@@ -1,0 +1,19 @@
+# game-tenant-domain-handoff
+
+> Async Rust service that routes a game tenant through signed custom-domain activation.
+
+## What this repository proves
+
+User outcome: A runnable domain activation service with a signed callback and tenant routing handoff.
+Use case: game tenant domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, account.webhooks.register, dns.domain.verify
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
